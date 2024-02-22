@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Health insurance - Global Economical Quotes</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+  />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+
+  <link rel="stylesheet" href="./style.css">
+  <script>
+    $(function () {
+   
+   'use strict';
+   
+   var CountSelect = $('.countries'),
+   
+       myCountries = ["Alaska", "Alabama", "Arkansas", "Arizona", "California", "Colorado", "Connecticut", "Columbia", "Delaware", "Florida", "Georgia", "Guam", "Hawaii", "Iowa", "Idaho", "Illinois", "Indiana", "Kansas", "Kentucky", "Louisiana", "Massachusetts", "Maryland", "Maine", "Michigan", "Minnesota", "Missouri", "Mississippi", "Montana", "North_Carolina", "North_Dakota", "Nebraska", "New_Hampshire", "New_Jersey", "New_Mexico", "Nevada", "New_York", "Ohio", "Oklahoma", "Oregon", "Pennsylvania", "Puerto_Rico", "Rhode_Island", "South_Carolina", "South_Dakota", "Tennessee", "Texas", "Utah", "Virginia", "Virgin_Islands", "Vermont", "Washington", "Wisconsin", "West_Virginia", "Wyoming"],
+       
+       Alaska = ["Anchorage","Cordova","Fairbanks","Haines","Homer","Juneau","Ketchikan","Kodiak","Kotzebue","Nome","Palmer","Seward","Sitka","Skagway","Valdez"],
+       
+       Alabama = ["Alexander City","Andalusia","Anniston","Athens","Atmore","Auburn","Bessemer","Birmingham","Chickasaw","Clanton","Cullman","Decatur","Demopolis","Dothan","Enterprise","Eufaula","Florence","Fort Payne","Gadsden","Greenville","Guntersville","Huntsville","Jasper","Marion","Mobile","Montgomery","Opelika","Ozark","Phenix City","Prichard","Scottsboro","Selma","Sheffield","Sylacauga","Talladega","Troy","Tuscaloosa","Tuscumbia","Tuskegee"],
+       
+      Arkansas = ["Arkadelphia","Arkansas Post","Batesville","Benton","Blytheville","Camden","Conway","Crossett","El Dorado","Fayetteville","Forrest City","Fort Smith","Harrison","Helena","Hope","Hot Springs","Jacksonville","Jonesboro","Little Rock","Magnolia","Morrilton","Newport","North Little Rock","Osceola","Pine Bluff","Rogers","Searcy","Stuttgart","Van Buren","West Memphis"],
+       
+      
+      Arizona = ["Ajo","Avondale","Bisbee","Casa Grande","Chandler","Clifton","Douglas","Flagstaff","Florence","Gila Bend","Glendale","Globe","Kingman","Lake Havasu City","Mesa","Nogales","Oraibi","Phoenix","Prescott","Scottsdale","Sierra Vista","Tempe","Tombstone","Tucson","Walpi","Window Rock","Winslow","Yuma"],
+       
+      California = ["Alameda","Alhambra","Anaheim","Antioch","Arcadia","Bakersfield","Barstow","Belmont","Berkeley","Beverly Hills","Brea","Buena Park","Burbank","Calexico","Calistoga","Carlsbad","Carmel","Chico","Chula Vista","Claremont","Compton","Concord","Corona","Coronado","Costa Mesa","Culver City","Daly City","Davis","Downey","El Centro","El Cerrito","El Monte","Escondido","Eureka","Fairfield","Fontana","Fremont","Fresno","Fullerton","Garden Grove","Glendale","Hayward","Hollywood","Huntington Beach","Indio","Inglewood","Irvine","La Habra","Laguna Beach","Lancaster","Livermore","Lodi","Lompoc","Long Beach","Los Angeles","Malibu","Martinez","Marysville","Menlo Park","Merced","Modesto","Monterey","Mountain View","Napa","Needles","Newport Beach","Norwalk","Novato","Oakland","Oceanside","Ojai","Ontario","Orange","Oroville","Oxnard","Pacific Grove","Palm Springs","Palmdale","Palo Alto","Pasadena","Petaluma","Pomona","Port Hueneme","Rancho Cucamonga","Red Bluff","Redding","Redlands","Redondo Beach","Redwood City","Richmond","Riverside","Roseville","Sacramento","Salinas","San Bernardino","San Clemente","San Diego","San Fernando","San Francisco","San Gabriel","San Jose","San Juan Capistrano","San Leandro","San Luis Obispo","San Marino","San Mateo","San Pedro","San Rafael","San Simeon","Santa Ana","Santa Barbara","Santa Clara","Santa Clarita","Santa Cruz","Santa Monica","Santa Rosa","Sausalito","Simi Valley","Sonoma","South San Francisco","Stockton","Sunnyvale","Susanville","Thousand Oaks","Torrance","Turlock","Ukiah","Vallejo","Ventura","Victorville","Visalia","Walnut Creek","Watts","West Covina","Whittier","Woodland","Yorba Linda","Yuba City"],
+       
+      Colorado = ["Alamosa","Aspen","Aurora","Boulder","Breckenridge","Brighton","Canon City","Central City","Climax","Colorado Springs","Cortez","Cripple Creek","Denver","Durango","Englewood","Estes Park","Fort Collins","Fort Morgan","Georgetown","Glenwood Springs","Golden","Grand Junction","Greeley","Gunnison","La Junta","Leadville","Littleton","Longmont","Loveland","Montrose","Ouray","Pagosa Springs","Pueblo","Silverton","Steamboat Springs","Sterling","Telluride","Trinidad","Vail","Walsenburg","Westminster"],
+       
+      Connecticut = ["Ansonia","Berlin","Bloomfield","Branford","Bridgeport","Bristol","Coventry","Danbury","Darien","Derby","East Hartford","East Haven","Enfield","Fairfield","Farmington","Greenwich","Groton","Guilford","Hamden","Hartford","Lebanon","Litchfield","Manchester","Mansfield","Meriden","Middletown","Milford","Mystic","Naugatuck","New Britain","New Haven","New London","North Haven","Norwalk","Norwich","Old Saybrook","Orange","Seymour","Shelton","Simsbury","Southington","Stamford","Stonington","Stratford","Torrington","Wallingford","Waterbury","Waterford","Watertown","West Hartford","West Haven","Westport","Wethersfield","Willimantic","Windham","Windsor","Windsor Locks","Winsted"],
+
+      Columbia =["Abejorral","Abrego","Acacias","Achi","Agua de Dios","Aguachica","Aguadas","Aguazul","Agustin Codazzi","Aipe","Albania","Alcala","Algarrobo","Algeciras","Amaga","Amalfi","Anaime","Andalucia","Andes","Anserma","Ansermanuevo","Apartado","Aracataca","Aranzazu","Arauca","Arauquita","Arboletes","Ariguani","Arjona","Armenia","Armero-Guyabal","Astrea","Ayapel","Baranoa","Barbacoas","Barbosa","Barbosa","Barrancabermeja","Barrancas","Barranquilla","Becerril","Belalcazar","Belen de Umbria","Bello","Bogota","Bucaramanga","Buenaventura","Buenaventura","Bugalagrande","Caicedonia","Cajamarca","Cajica","Calamar","Calarca","Caldas","Cali","Campo de la Cruz","Campoalegre","Candelaria","Candelaria","Caqueza","Carepa","Carmen de Viboral","Cartagena","Cartagena del Chaira","Cartago","Caucasia","Cerete","Chaparral","Chia","Chicoral","Chigorodo","Chimichagua","Chinacota","Chinchina","Chinu","Chiquinquira","Chiriguana","Chivolo","Choconta","Cicuco","Cienaga","Cienaga de Oro","Cimitarra","Circasia","Cisneros","Ciudad Bolivar","Clemencia","Coello","Concordia","Condoto","Copacabana","Corinto","Corozal","Cota","Cucuta","Cumaral","Cumaribo","Cumbal","Curillo","Curumani","Dabeiba","Dagua","Darien","Donmatias","Dosquebradas","Duitama","El Bagre","El Banco","El Bordo","El Carmen de Bolivar","El Cerrito","El Charco","El Copey","El Doncello","El Dovio","El Paujil","El Pinon","El Reten","El Tambo","El Zulia","Envigado","Espinal","Facatativa","Flandes","Florencia","Florida","Floridablanca","Fonseca","Fredonia","Fresno","Frontino","Fundacion","Funza","Fusagasuga","Gaitania","Galapa","Gamarra","Garagoa","Garzon","Gigante","Girardot City","Giron","Granada","Guacari","Guadalajara de Buga","Guaduas","Guamal","Guamo","Guapi","Guarne","Honda","Ibague","Inirida","Ipiales","Istmina","Itaguei","Ituango","Jamundi","Jardin","Jerico","Juan de Acosta","Junin","La Calera","La Ceja","La Cruz","La Dorada","La Estrella","La Jagua de Ibirico","La Mesa","La Paz","La Plata","La Tebaida","La Union","La Union","La Union","La Victoria","La Virginia","Lebrija","Lerida","Leticia","Libano","Lorica","Los Palmitos","Los Patios","Luruaco","Madrid","Magangue","Mahates","Maicao","Majagual","Malaga","Malambo","Manati","Manaure","Manaure Balcon del Cesar","Manizales","Manzanares","Maria la Baja","Marinilla","Marsella","Medellin","Melgar","Miranda","Mocoa","Mompos","Moniquira","Montelibano","Montenegro","Monteria","Monterrey","Morales","Morales","Mosquera","Muzo","Natagaima","Necocli","Neira","Neiva","Nueva Granada","Obando","Ocana","Olaya Herrera","Orito","Ovejas","Pacho","Pacora","Padua","Pailitas","Paipa","Palermo","Palestina","Palmar de Varela","Palmira","Pamplona","Pasto","Patia","Payande","Pelaya","Pensilvania","Pereira","Piedecuesta","Piendamo","Pitalito","Pivijay","Planadas","Planeta Rica","Plato","Polonuevo","Ponedera","Popayan","Pradera","Pueblo Nuevo","Puebloviejo","Puerto Asis","Puerto Berrio","Puerto Boyaca","Puerto Carreno","Puerto Colombia","Puerto Leguizamo","Puerto Lopez","Puerto Rico","Puerto Salgar","Puerto Santander","Puerto Tejada","Puerto Wilches","Purificacion","Quibdo","Quimbaya","Quinchia","Remolino","Repelon","Restrepo","Restrepo","Retiro","Riofrio","Riohacha","Rionegro","Riosucio","Rivera","Roldanillo","Sabana de Torres","Sabanagrande","Sabanalarga","Sabaneta","Sahagun","Salamina","Saldana","Samaniego","Sampues","San Agustin","San Alberto","San Andres","San Antero","San Antonio","San Benito Abad","San Bernardo del Viento","San Carlos","San Carlos","San Carlos","San Diego","San Estanislao","San Gil","San Jacinto","San Jose del Guaviare","San Juan de Betulia","San Juan de Uraba","San Juan del Cesar","San Juan Nepomuceno","San Luis de Since","San Marcos","San Martin","San Onofre","San Pablo","San Pedro","San Pedro","San Pedro de Uraba","San Rafael","San Sebastian de Mariquita","San Vicente de Chucuri","Sandona","Santa Ana","Santa Barbara","Santa Fe de Antioquia","Santa Lucia","Santa Marta","Santa Rosa","Santa Rosa de Cabal","Santa Rosa de Osos","Santa Rosa del Sur","Santander de Quilichao","Santiago de Tolu","Santo Tomas","Santuario","Sardinata","Segovia","Sevilla","Sibate","Sibundoy","Silvania","Silvia","Sincelejo","Sitionuevo","Soacha","Soata","Socorro","Sogamoso","Soledad","Sonson","Soplaviento","Sopo","Suan","Suarez","Sucre","Supia","Tado","Tame","Tibu","Tierralta","Timana","Tocaima","Tolu Viejo","Toro","Tubara","Tulua","Tumaco","Tunja","Tuquerres","Turbaco","Turbana","Turbo","Uribia","Urrao","Urumita","Usiacuri","Valencia","Valle del Guamuez","Valledupar","Vegachi","Velez","Venadillo","Villa de San Diego de Ubate","Villa del Rosario","Villa Rica","Villamaria","Villanueva","Villanueva","Villanueva","Villavicencio","Villeta","Viterbo","Yarumal","Yondo","Yopal","Yotoco","Yumbo","Zambrano","Zaragoza","Zarzal","Zipaquira"],
+       
+      Delaware = ["Dover","Lewes","Milford","New Castle","Newark","Smyrna","Wilmington"],
+       
+      Florida = ["Apalachicola","Bartow","Belle Glade","Boca Raton","Bradenton","Cape Coral","Clearwater","Cocoa Beach","Cocoa-Rockledge","Coral Gables","Daytona Beach","De Land","Deerfield Beach","Delray Beach","Fernandina Beach","Fort Lauderdale","Fort Myers","Fort Pierce","Fort Walton Beach","Gainesville","Hallandale Beach","Hialeah","Hollywood","Homestead","Jacksonville","Key West","Lake City","Lake Wales","Lakeland","Largo","Melbourne","Miami","Miami Beach","Naples","New Smyrna Beach","Ocala","Orlando","Ormond Beach","Palatka","Palm Bay","Palm Beach","Panama City","Pensacola","Pompano Beach","Saint Augustine","Saint Petersburg","Sanford","Sarasota","Sebring","Tallahassee","Tampa","Tarpon Springs","Titusville","Venice","West Palm Beach","White Springs","Winter Haven","Winter Park"],
+      
+      Georgia = ["Albany","Americus","Andersonville","Athens","Atlanta","Augusta","Bainbridge","Blairsville","Brunswick","Calhoun","Carrollton","Columbus","Dahlonega","Dalton","Darien","Decatur","Douglas","East Point","Fitzgerald","Fort Valley","Gainesville","La Grange","Macon","Marietta","Milledgeville","Plains","Rome","Savannah","Toccoa","Valdosta","Warm Springs","Warner Robins","Washington","Waycross"],
+
+      Guam = ["Adacao","Agana Heights","Agat","Apotgan","Barrigada","Barrigada Heights","Dededo","Hagåtña","Liguan","Machananao East","Machanao","Macheche","Maina","Maite","Mangilao","Mataguac","Mogfog","Mongmong","Oka","Santa Rita","Sinajana","South Gayinero","Tamuning","Toto","University of Guam","Upper Tumon","Wusstig","Y Papao"],
+       
+      Hawaii = ["Hanalei","Hilo","Honaunau","Honolulu","Kahului","Kaneohe","Kapaa","Kawaihae","Lahaina","Laie","Wahiawa","Wailuku","Waimea"],
+       
+      Iowa = ["Amana Colonies","Ames","Boone","Burlington","Cedar Falls","Cedar Rapids","Charles City","Cherokee","Clinton","Council Bluffs","Davenport","Des Moines","Dubuque","Estherville","Fairfield","Fort Dodge","Grinnell","Indianola","Iowa City","Keokuk","Mason City","Mount Pleasant","Muscatine","Newton","Oskaloosa","Ottumwa","Sioux City","Waterloo","Webster City","West Des Moines"],
+       
+      Idaho = ["Blackfoot","Boise","Bonners Ferry","Caldwell","Coeur d’Alene","Idaho City","Idaho Falls","Kellogg","Lewiston","Moscow","Nampa","Pocatello","Priest River","Rexburg","Sun Valley","Twin Falls"],
+
+      Illinois = ["Alton","Arlington Heights","Arthur","Aurora","Belleville","Belvidere","Bloomington","Brookfield","Cahokia","Cairo","Calumet City","Canton","Carbondale","Carlinville","Carthage","Centralia","Champaign","Charleston","Chester","Chicago","Chicago Heights","Cicero","Collinsville","Danville","Decatur","DeKalb","Des Plaines","Dixon","East Moline","East Saint Louis","Effingham","Elgin","Elmhurst","Evanston","Freeport","Galena","Galesburg","Glen Ellyn","Glenview","Granite City","Harrisburg","Herrin","Highland Park","Jacksonville","Joliet","Kankakee","Kaskaskia","Kewanee","La Salle","Lake Forest","Libertyville","Lincoln","Lisle","Lombard","Macomb","Mattoon","Moline","Monmouth","Mount Vernon","Mundelein","Naperville","Nauvoo","Normal","North Chicago","Oak Park","Oregon","Ottawa","Palatine","Park Forest","Park Ridge","Pekin","Peoria","Petersburg","Pontiac","Quincy","Rantoul","River Forest","Rock Island","Rockford","Salem","Shawneetown","Skokie","South Holland","Springfield","Streator","Summit","Urbana","Vandalia","Virden","Waukegan","Wheaton","Wilmette","Winnetka","Wood River","Zion"],
+       
+      Indiana = ["Anderson","Bedford","Bloomington","Columbus","Connersville","Corydon","Crawfordsville","East Chicago","Elkhart","Elwood","Evansville","Fort Wayne","French Lick","Gary","Geneva","Goshen","Greenfield","Hammond","Hobart","Huntington","Indianapolis","Jeffersonville","Kokomo","Lafayette","Madison","Marion","Michigan City","Mishawaka","Muncie","Nappanee","Nashville","New Albany","New Castle","New Harmony","Peru","Plymouth","Richmond","Santa Claus","Shelbyville","South Bend","Terre Haute","Valparaiso","Vincennes","Wabash","West Lafayette"],
+       
+      Kansas = ["Abilene","Arkansas City","Atchison","Chanute","Coffeyville","Council Grove","Dodge City","Emporia","Fort Scott","Garden City","Great Bend","Hays","Hutchinson","Independence","Junction City","Kansas City","Lawrence","Leavenworth","Liberal","Manhattan","McPherson","Medicine Lodge","Newton","Olathe","Osawatomie","Ottawa","Overland Park","Pittsburg","Salina","Shawnee","Smith Center","Topeka","Wichita"],
+       
+      Kentucky = ["Ashland","Barbourville","Bardstown","Berea","Boonesborough","Bowling Green","Campbellsville","Covington","Danville","Elizabethtown","Frankfort","Harlan","Harrodsburg","Hazard","Henderson","Hodgenville","Hopkinsville","Lexington","Louisville","Mayfield","Maysville","Middlesboro","Newport","Owensboro","Paducah","Paris","Richmond"],
+
+      Louisiana = ["Abbeville","Alexandria","Bastrop","Baton Rouge","Bogalusa","Bossier City","Gretna","Houma","Lafayette","Lake Charles","Monroe","Morgan City","Natchitoches","New Iberia","New Orleans","Opelousas","Ruston","Saint Martinville","Shreveport","Thibodaux"],
+       
+      Massachusetts = ["Abington","Adams","Amesbury","Amherst","Andover","Arlington","Athol","Attleboro","Barnstable","Bedford","Beverly","Boston","Bourne","Braintree","Brockton","Brookline","Cambridge","Canton","Charlestown","Chelmsford","Chelsea","Chicopee","Clinton","Cohasset","Concord","Danvers","Dartmouth","Dedham","Dennis","Duxbury","Eastham","Edgartown","Everett","Fairhaven","Fall River","Falmouth","Fitchburg","Framingham","Gloucester","Great Barrington","Greenfield","Groton","Harwich","Haverhill","Hingham","Holyoke","Hyannis","Ipswich","Lawrence","Lenox","Leominster","Lexington","Lowell","Ludlow","Lynn","Malden","Marblehead","Marlborough","Medford","Milton","Nahant","Natick","New Bedford","Newburyport","Newton","North Adams","Northampton","Norton","Norwood","Peabody","Pittsfield","Plymouth","Provincetown","Quincy","Randolph","Revere","Salem","Sandwich","Saugus","Somerville","South Hadley","Springfield","Stockbridge","Stoughton","Sturbridge","Sudbury","Taunton","Tewksbury","Truro","Watertown","Webster","Wellesley","Wellfleet","West Bridgewater","West Springfield","Westfield","Weymouth","Whitman","Williamstown","Woburn","Woods Hole","Worcester"],
+       
+      Maryland  = ["Aberdeen","Annapolis","Baltimore","Bethesda-Chevy Chase","Bowie","Cambridge","Catonsville","College Park","Columbia","Cumberland","Easton","Elkton","Emmitsburg","Frederick","Greenbelt","Hagerstown","Hyattsville","Laurel","Oakland","Ocean City","Rockville","Saint Marys City","Salisbury","Silver Spring","Takoma Park","Towson","Westminster"],
+
+      Maine = ["Auburn","Augusta","Bangor","Bar Harbor","Bath","Belfast","Biddeford","Boothbay Harbor","Brunswick","Calais","Caribou","Castine","Eastport","Ellsworth","Farmington","Fort Kent","Gardiner","Houlton","Kennebunkport","Kittery","Lewiston","Lubec","Machias","Orono","Portland","Presque Isle","Rockland","Rumford","Saco","Scarborough","Waterville","York"],
+       
+      Michigan = ["Adrian","Alma","Ann Arbor","Battle Creek","Bay City","Benton Harbor","Bloomfield Hills","Cadillac","Charlevoix","Cheboygan","Dearborn","Detroit","East Lansing","Eastpointe","Ecorse","Escanaba","Flint","Grand Haven","Grand Rapids","Grayling","Grosse Pointe","Hancock","Highland Park","Holland","Houghton","Interlochen","Iron Mountain","Ironwood","Ishpeming","Jackson","Kalamazoo","Lansing","Livonia","Ludington","Mackinaw City","Manistee","Marquette","Menominee","Midland","Monroe","Mount Clemens","Mount Pleasant","Muskegon","Niles","Petoskey","Pontiac","Port Huron","Royal Oak","Saginaw","Saint Ignace","Saint Joseph","Sault Sainte Marie","Traverse City","Trenton","Warren","Wyandotte","Ypsilanti"],
+       
+      Minnesota = ["Albert Lea","Alexandria","Austin","Bemidji","Bloomington","Brainerd","Crookston","Duluth","Ely","Eveleth","Faribault","Fergus Falls","Hastings","Hibbing","International Falls","Little Falls","Mankato","Minneapolis","Moorhead","New Ulm","Northfield","Owatonna","Pipestone","Red Wing","Rochester","Saint Cloud","Saint Paul","Sauk Centre","South Saint Paul","Stillwater","Virginia","Willmar","Winona"],
+       
+      Missouri = ["Boonville","Branson","Cape Girardeau","Carthage","Chillicothe","Clayton","Columbia","Excelsior Springs","Ferguson","Florissant","Fulton","Hannibal","Independence","Jefferson City","Joplin","Kansas City","Kirksville","Lamar","Lebanon","Lexington","Maryville","Mexico","Monett","Neosho","New Madrid","Rolla","Saint Charles","Saint Joseph","Saint Louis","Sainte Genevieve","Salem","Sedalia","Springfield","Warrensburg","West Plains"],
+
+      Mississippi = ["Bay Saint Louis","Biloxi","Canton","Clarksdale","Columbia","Columbus","Corinth","Greenville","Greenwood","Grenada","Gulfport","Hattiesburg","Holly Springs","Jackson","Laurel","Meridian","Natchez","Ocean Springs","Oxford","Pascagoula","Pass Christian","Philadelphia","Port Gibson","Starkville","Tupelo","Vicksburg","West Point","Yazoo City"],
+       
+      North_Carolina = ["Asheboro","Asheville","Bath","Beaufort","Boone","Burlington","Chapel Hill","Charlotte","Concord","Durham","Edenton","Elizabeth City","Fayetteville","Gastonia","Goldsboro","Greensboro","Greenville","Halifax","Henderson","Hickory","High Point","Hillsborough","Jacksonville","Kinston","Kitty Hawk","Lumberton","Morehead City","Morganton","Nags Head","New Bern","Pinehurst","Raleigh","Rocky Mount","Salisbury","Shelby","Washington","Wilmington","Wilson","Winston-Salem"],
+       
+      North_Dakota = ["Bismarck","Devils Lake","Dickinson","Fargo","Grand Forks","Jamestown","Mandan","Minot","Rugby","Valley City","Wahpeton","Williston"],
+       
+      Nebraska = ["Beatrice","Bellevue","Boys Town","Chadron","Columbus","Fremont","Grand Island","Hastings","Kearney","Lincoln","McCook","Minden","Nebraska City","Norfolk","North Platte","Omaha","Plattsmouth","Red Cloud","Sidney"],
+       
+     
+     New_Hampshire = ["Berlin","Claremont","Concord","Derry","Dover","Durham","Exeter","Franklin","Hanover","Hillsborough","Keene","Laconia","Lebanon","Manchester","Nashua","Peterborough","Plymouth","Portsmouth","Rochester","Salem","Somersworth"],
+       
+      New_Jersey = ["Asbury Park","Atlantic City","Bayonne","Bloomfield","Bordentown","Bound Brook","Bridgeton","Burlington","Caldwell","Camden","Cape May","Clifton","Cranford","East Orange","Edison","Elizabeth","Englewood","Fort Lee","Glassboro","Hackensack","Haddonfield","Hoboken","Irvington","Jersey City","Lakehurst","Lakewood","Long Beach","Long Branch","Madison","Menlo Park","Millburn","Millville","Montclair","Morristown","Mount Holly","New Brunswick","New Milford","Newark","Ocean City","Orange","Parsippany–Troy Hills","Passaic","Paterson","Perth Amboy","Plainfield","Princeton","Ridgewood","Roselle","Rutherford","Salem","Somerville","South Orange Village","Totowa","Trenton","Union","Union City","Vineland","Wayne","Weehawken","West New York","West Orange","Willingboro","Woodbridge"],
+       
+      New_Mexico = ["Acoma","Alamogordo","Albuquerque","Artesia","Belen","Carlsbad","Clovis","Deming","Farmington","Gallup","Grants","Hobbs","Las Cruces","Las Vegas","Los Alamos","Lovington","Portales","Raton","Roswell","Santa Fe","Shiprock","Silver City","Socorro","Taos","Truth or Consequences","Tucumcari"],
+       
+      Nevada = ["Boulder City","Carson City","Elko","Ely","Fallon","Genoa","Goldfield","Henderson","Las Vegas","North Las Vegas","Reno","Sparks","Virginia City","Winnemucca"],
+
+      New_York = ["Albany","Amsterdam","Auburn","Babylon","Batavia","Beacon","Bedford","Binghamton","Bronx","Brooklyn","Buffalo","Chautauqua","Cheektowaga","Clinton","Cohoes","Coney Island","Cooperstown","Corning","Cortland","Crown Point","Dunkirk","East Aurora","East Hampton","Eastchester","Elmira","Flushing","Forest Hills","Fredonia","Garden City","Geneva","Glens Falls","Gloversville","Great Neck","Hammondsport","Harlem","Hempstead","Herkimer","Hudson","Huntington","Hyde Park","Ilion","Ithaca","Jamestown","Johnstown","Kingston","Lackawanna","Lake Placid","Levittown","Lockport","Mamaroneck","Manhattan","Massena","Middletown","Mineola","Mount Vernon","New Paltz","New Rochelle","New Windsor","New York City","Newburgh","Niagara Falls","North Hempstead","Nyack","Ogdensburg","Olean","Oneida","Oneonta","Ossining","Oswego","Oyster Bay","Palmyra","Peekskill","Plattsburgh","Port Washington","Potsdam","Poughkeepsie","Queens","Rensselaer","Rochester","Rome","Rotterdam","Rye","Sag Harbor","Saranac Lake","Saratoga Springs","Scarsdale","Schenectady","Seneca Falls","Southampton","Staten Island","Stony Brook","Stony Point","Syracuse","Tarrytown","Ticonderoga","Tonawanda","Troy","Utica","Watertown","Watervliet","Watkins Glen","West Seneca","White Plains","Woodstock","Yonkers"],
+       
+      Ohio = ["Akron","Alliance","Ashtabula","Athens","Barberton","Bedford","Bellefontaine","Bowling Green","Canton","Chillicothe","Cincinnati","Cleveland","Cleveland Heights","Columbus","Conneaut","Cuyahoga Falls","Dayton","Defiance","Delaware","East Cleveland","East Liverpool","Elyria","Euclid","Findlay","Gallipolis","Greenville","Hamilton","Kent","Kettering","Lakewood","Lancaster","Lima","Lorain","Mansfield","Marietta","Marion","Martins Ferry","Massillon","Mentor","Middletown","Milan","Mount Vernon","New Philadelphia","Newark","Niles","North College Hill","Norwalk","Oberlin","Painesville","Parma","Piqua","Portsmouth","Put-in-Bay","Salem","Sandusky","Shaker Heights","Springfield","Steubenville","Tiffin","Toledo","Urbana","Warren","Wooster","Worthington","Xenia","Yellow Springs","Youngstown","Zanesville"],
+       
+      Oklahoma = ["Ada","Altus","Alva","Anadarko","Ardmore","Bartlesville","Bethany","Chickasha","Claremore","Clinton","Cushing","Duncan","Durant","Edmond","El Reno","Elk City","Enid","Eufaula","Frederick","Guthrie","Guymon","Hobart","Holdenville","Hugo","Lawton","McAlester","Miami","Midwest City","Moore","Muskogee","Norman","Oklahoma City","Okmulgee","Pauls Valley","Pawhuska","Perry","Ponca City","Pryor","Sallisaw","Sand Springs","Sapulpa","Seminole","Shawnee","Stillwater","Tahlequah","The Village","Tulsa","Vinita","Wewoka","Woodward"],
+       
+      Oregon = ["Albany","Ashland","Astoria","Baker City","Beaverton","Bend","Brookings","Burns","Coos Bay","Corvallis","Eugene","Grants Pass","Hillsboro","Hood River","Jacksonville","John Day","Klamath Falls","La Grande","Lake Oswego","Lakeview","McMinnville","Medford","Newberg","Newport","Ontario","Oregon City","Pendleton","Port Orford","Portland","Prineville","Redmond","Reedsport","Roseburg","Salem","Seaside","Springfield","The Dalles","Tillamook"],
+
+      Pennsylvania = ["Abington","Aliquippa","Allentown","Altoona","Ambridge","Bedford","Bethlehem","Bloomsburg","Bradford","Bristol","Carbondale","Carlisle","Chambersburg","Chester","Columbia","Easton","Erie","Franklin","Germantown","Gettysburg","Greensburg","Hanover","Harmony","Harrisburg","Hazleton","Hershey","Homestead","Honesdale","Indiana","Jeannette","Jim Thorpe","Johnstown","Lancaster","Lebanon","Levittown","Lewistown","Lock Haven","Lower Southampton","McKeesport","Meadville","Middletown","Monroeville","Nanticoke","New Castle","New Hope","New Kensington","Norristown","Oil City","Philadelphia","Phoenixville","Pittsburgh","Pottstown","Pottsville","Reading","Scranton","Shamokin","Sharon","State College","Stroudsburg","Sunbury","Swarthmore","Tamaqua","Titusville","Uniontown","Warren","Washington","West Chester","Wilkes-Barre","Williamsport","York"],
+       
+      Puerto_Rico = ["Adjuntas","Aguada","Aguadilla","Aguas Buenas","Aibonito","Añasco","Arecibo","Arroyo","Barceloneta","Barranquitas","Bayamón","Cabo Rojo","Caguas","Camuy","Canóvanas","Carolina","Cataño","Cayey","Ceiba","Ciales","Cidra","Coamo","Comerio","Corozal","Culebra","Dorado","Fajardo","Florida","Guánica","Guayama","Guayanilla","Guaynabo","Gurabo","Hatillo","Hormigueros","Humacao","Isabela","Jayuya","Juana Díaz","Juncos","Lajas","Lares","Las Marías","Las Piedras","Loíza","Luquillo","Manatí","Maricao","Maunabo","Mayagüez","Moca","Morovis","Naguabo","Naranjito","Orocovis","Patillas","Peñuelas","Ponce","Quebradillas","Rincón","Río Grande","Sabana Grande","Salinas","San Germán","San Juan","San Lorenzo","San Sebastián","Santa Isabel","Toa Alta","Toa Baja","Trujillo Alto","Utuado","Vega Alta","Vega Baja","Vieques","Villalba","Yabucoa","Yauco"],
+       
+      Rhode_Island = ["Barrington","Bristol","Central Falls","Cranston","East Greenwich","East Providence","Kingston","Middletown","Narragansett","Newport","North Kingstown","Pawtucket","Portsmouth","Providence","South Kingstown","Tiverton","Warren","Warwick","Westerly","Wickford","Woonsocket"],
+       
+      South_Carolina = ["Abbeville","Aiken","Anderson","Beaufort","Camden","Charleston","Columbia","Darlington","Florence","Gaffney","Georgetown","Greenville","Greenwood","Hartsville","Lancaster","Mount Pleasant","Myrtle Beach","Orangeburg","Rock Hill","Spartanburg","Sumter","Union"],
+
+      South_Dakota = ["Aberdeen","Belle Fourche","Brookings","Canton","Custer","De Smet","Deadwood","Hot Springs","Huron","Lead","Madison","Milbank","Mitchell","Mobridge","Pierre","Rapid City","Sioux Falls","Spearfish","Sturgis","Vermillion","Watertown","Yankton"],
+       
+      Tennessee = ["Alcoa","Athens","Chattanooga","Clarksville","Cleveland","Columbia","Cookeville","Dayton","Elizabethton","Franklin","Gallatin","Gatlinburg","Greeneville","Jackson","Johnson City","Jonesborough","Kingsport","Knoxville","Lebanon","Maryville","Memphis","Morristown","Murfreesboro","Nashville","Norris","Oak Ridge","Shelbyville","Tullahoma"],
+       
+      Texas = ["Abilene","Alpine","Amarillo","Arlington","Austin","Baytown","Beaumont","Big Spring","Borger","Brownsville","Bryan","Canyon","Cleburne","College Station","Corpus Christi","Crystal City","Dallas","Del Rio","Denison","Denton","Eagle Pass","Edinburg","El Paso","Fort Worth","Freeport","Galveston","Garland","Goliad","Greenville","Harlingen","Houston","Huntsville","Irving","Johnson City","Kilgore","Killeen","Kingsville","Laredo","Longview","Lubbock","Lufkin","Marshall","McAllen","McKinney","Mesquite","Midland","Mission","Nacogdoches","New Braunfels","Odessa","Orange","Pampa","Paris","Pasadena","Pecos","Pharr","Plainview","Plano","Port Arthur","Port Lavaca","Richardson","San Angelo","San Antonio","San Felipe","San Marcos","Sherman","Sweetwater","Temple","Texarkana","Texas City","Tyler","Uvalde","Victoria","Waco","Weatherford","Wichita Falls","Ysleta"],
+       
+      Utah = ["Alta","American Fork","Bountiful","Brigham City","Cedar City","Clearfield","Delta","Fillmore","Green River","Heber City","Kanab","Layton","Lehi","Logan","Manti","Moab","Monticello","Murray","Nephi","Ogden","Orderville","Orem","Panguitch","Park City","Payson","Price","Provo","Saint George","Salt Lake City","Spanish Fork","Springville","Tooele","Vernal"],
+
+      Virginia = ["Abingdon","Alexandria","Bristol","Charlottesville","Chesapeake","Danville","Fairfax","Falls Church","Fredericksburg","Hampton","Hanover","Hopewell","Lexington","Lynchburg","Manassas","Martinsville","New Market","Newport News","Norfolk","Petersburg","Portsmouth","Reston","Richmond","Roanoke","Staunton","Suffolk","Virginia Beach","Waynesboro","Williamsburg","Winchester"],
+       
+      Virgin_Islands = ["Abingdon","Adelphi","Adrian","Alexandria","Allandale","Altona","Altona","Anguilla","Anna's Retreat","Annaberg","Annaberg","Annaly","Annas Hope","Barrett","Beck Grove","Beeston Hill","Bellevue","Bellevue","Belvedere","Benner","Bethany","Bethlehem Old Work","Bettys Hope","Betzys Jewell","Blessing","Bodkin","Bolongo","Bonne Esperance","Bonne Esperance","Bordeaux","Bovoni","Bristol","Bugbyhole","Bulows Minde","Butler Bay","Butzberg","Cabritaberg","Calabash","Camporico","Canaan","Cane","Cane Valley","Canebay","Carden","Caret Bay Estate","Carlton","Carolina","Cassi Hill","Castle Coakley","Catharinas Hope","Cathrines Rest","Charlotte Amalie","Charlotte Amalie West","Charlottesville","Chesapeake","Christiansted","Clairmont","Clifton Hill","Coble","Concordia","Concordia","Contant","Contant","Contentment","Cooper","Coral Bay","Cotton Grove","Cotton Valley","Cowell Battery","Cruz Bay","Danville","Diamond","Diamond Keturah","Donoe","Dorothea","East End","Emmaus","Enighed","Enighed","Ensomned","Envy","Estate Thomas","Fairfax","Falls Church","Fareham","Fish Bay","Fort Christian","Fort Frederick","Fortuna","Fountain","Fredensborg","Fredensdal","Fredericksburg","Frederiks Haab","Frederiksted","Fredriksdal","Frenchtown","Friedensfeld","Frydendal","Glynn","Golden Grove","Good Hope","Granard","Grange","Great Pond","Green Kay","Grove Place","Hampton","Hams Bay","Hanover","Hard Labour","Hermitage","Hermitage","Hesselberg","Hoffman","Hogensborg","Hope","Hopewell","Humbug","Jealousy","Jerusalem and Figtree Hill","John Oley","Johns Folly","Jolly Hill","Kingshill","Knight","L'Esperance","La Grande Princesse","La Grange","La Reine","La Vallee","Lameshur","Laprey Valley","Leinster Bay","Lerkenlund","Lexington","Libanon Hill","Lilliendahl","Limetree","Little Fountain","Longford","Louisenhoj","Lovenlund","Lower Love","Lowrys Hill","Lynchburg","Madame Carty","Mafolie","Maho Bay","Mandal","Mandal","Mariendal","Mary Point","Misgen","Mollendal","Mon Bijou","Monte","Montpellier","Morningstar","Mount Pleasant","Mount Pleasant","Munster","Nadir","Nazareth","Negro Bay","Neltjeberg","Nicholas","North Side","North Star","Nugent","Orange Grove","Orangegrove","Oxford","Palestina","Paradise","Parasol","Pearl","Pearson Gardens","Peterborg","Peters Rest","Petronella","Pleasant Vale","Plessen","Profit","Prosperity","Punch","Raphune","Rattan and Belvedere","Recovery Hill","Red Hook","Reef Bay","Resolution","Richmond","Robe Hill","Rosendal","Ruan Bay","Ruby","Ryan","Saint John","Saint Peter","Sallys Fancy","Sandy Point","Santa Maria Estate","Seven Hills","Shoys","Sieben","Sion Farm","Sion Hill","Slob","Smithfield","Solberg","Solitude","Sorgenfri","Southgate","Spanish Town","Sprat Hall Beach","Springfield","Strawberry Hill","Sunny Isle","Susannaberg","Teagues Bay","Testman","Tutu","Two Brothers","Upper Bethlehem","Upper Love","Waldberggaard","Wheel of Fortune","Whim","Whites Bay","William","Williams Delight","Windberg","Windsor","Zambee"],
+       
+      Vermont = ["Barre","Bellows Falls","Bennington","Brattleboro","Burlington","Essex","Manchester","Middlebury","Montpelier","Newport","Plymouth","Rutland","Saint Albans","Saint Johnsbury","Sharon","Winooski"],
+       
+      Washington = ["Aberdeen","Anacortes","Auburn","Bellevue","Bellingham","Bremerton","Centralia","Coulee Dam","Coupeville","Ellensburg","Ephrata","Everett","Hoquiam","Kelso","Kennewick","Longview","Moses Lake","Oak Harbor","Olympia","Pasco","Point Roberts","Port Angeles","Pullman","Puyallup","Redmond","Renton","Richland","Seattle","Spokane","Tacoma","Vancouver","Walla Walla","Wenatchee","Yakima"],
+
+      Wisconsin = ["Appleton","Ashland","Baraboo","Belmont","Beloit","Eau Claire","Fond du Lac","Green Bay","Hayward","Janesville","Kenosha","La Crosse","Lake Geneva","Madison","Manitowoc","Marinette","Menasha","Milwaukee","Neenah","New Glarus","Oconto","Oshkosh","Peshtigo","Portage","Prairie du Chien","Racine","Rhinelander","Ripon","Sheboygan","Spring Green","Stevens Point","Sturgeon Bay","Superior","Waukesha","Wausau","Wauwatosa","West Allis","West Bend","Wisconsin Dells"],
+       
+      West_Virginia = ["Bath","Beckley","Bluefield","Buckhannon","Charles Town","Charleston","Clarksburg","Elkins","Fairmont","Grafton","Harpers Ferry","Hillsboro","Hinton","Huntington","Keyser","Lewisburg","Logan","Martinsburg","Morgantown","Moundsville","New Martinsville","Parkersburg","Philippi","Point Pleasant","Princeton","Romney","Shepherdstown","South Charleston","Summersville","Weirton","Welch","Wellsburg","Weston","Wheeling","White Sulphur Springs","Williamson"],
+       
+      Wyoming = ["Buffalo","Casper","Cheyenne","Cody","Douglas","Evanston","Gillette","Green River","Jackson","Lander","Laramie","Newcastle","Powell","Rawlins","Riverton","Rock Springs","Sheridan","Ten Sleep","Thermopolis","Torrington","Worland"];
+           
+   // Function Create Option    
+   
+   function CreateOption(valriable, elementToAppend) {
+       
+       var i;
+       
+       for (i = 0; i < valriable.length; i += 1) {
+   
+           $('<option>', {value: valriable[i], text: valriable[i], id: valriable[i]})
+               .appendTo(elementToAppend);
+       }
+   }
+   
+   
+   // Create Option myCountries
+   CreateOption(myCountries, $('.countries'));
+   
+   // Create Option Africa
+   CreateOption(Alaska, $('.Alaska'));
+   
+   // Create Option Africa
+   CreateOption(Alabama, $('.Alabama'));
+   
+   // Create Option Africa
+   CreateOption(Arkansas, $('.Arkansas'));
+   
+   // Create Option Africa
+
+   CreateOption(Arizona, $('.Arizona'));
+   
+   // Create Option Africa
+   CreateOption(California, $('.California'));
+   
+   // Create Option Africa
+   CreateOption(Colorado, $('.Colorado'));
+   
+   // Create Option Africa
+   CreateOption(Connecticut, $('.Connecticut'));
+
+   // Create Option Africa
+   CreateOption(Columbia, $('.Columbia'));
+
+   CreateOption(Delaware, $('.Delaware'));
+   
+   // Create Option Africa
+   CreateOption(Florida, $('.Florida'));
+   
+   // Create Option Africa
+   CreateOption(Georgia, $('.Georgia'));
+   
+   // Create Option Africa
+   CreateOption(Guam, $('.Guam'));
+
+   CreateOption(Hawaii, $('.Hawaii'));
+   
+   // Create Option Africa
+   CreateOption(Iowa, $('.Iowa'));
+   
+   // Create Option Africa
+   CreateOption(Idaho, $('.Idaho'));
+   
+   // Create Option Africa
+   CreateOption(Illinois, $('.Illinois'));
+
+   CreateOption(Indiana, $('.Indiana'));
+   
+   // Create Option Africa
+   CreateOption(Kansas, $('.Kansas'));
+   
+   // Create Option Africa
+   CreateOption(Kentucky, $('.Kentucky'));
+   
+   // Create Option Africa
+   CreateOption(Louisiana, $('.Louisiana'));
+
+   // Create Option Africa
+   CreateOption(Massachusetts, $('.Massachusetts'));
+
+   CreateOption(Maryland, $('.Maryland'));
+   
+   // Create Option Africa
+   CreateOption(Maine, $('.Maine'));
+   
+   // Create Option Africa
+   CreateOption(Michigan, $('.Michigan'));
+   
+   // Create Option Africa
+   CreateOption(Minnesota, $('.Minnesota'));
+
+    // Create Option Africa
+    CreateOption(Missouri, $('.Missouri'));
+   
+   // Create Option Africa
+   CreateOption(Mississippi, $('.Mississippi'));
+   
+   // Create Option Africa
+   CreateOption(North_Carolina, $('.North_Carolina'));
+   
+   // Create Option Africa
+   CreateOption(North_Dakota, $('.North_Dakota'));
+
+   CreateOption(Nebraska, $('.Nebraska'));
+   
+   // Create Option Africa
+   CreateOption(California, $('.New_Hampshire'));
+   
+   // Create Option Africa
+   CreateOption(New_Jersey, $('.New_Jersey'));
+   
+   // Create Option Africa
+   CreateOption(New_Mexico, $('.New_Mexico'));
+
+   // Create Option Africa
+   CreateOption(Nevada, $('.Nevada'));
+
+   CreateOption(New_York, $('.New_York'));
+   
+   // Create Option Africa
+   CreateOption(Ohio, $('.Ohio'));
+   
+   // Create Option Africa
+   CreateOption(Oklahoma, $('.Oklahoma'));
+   
+   // Create Option Africa
+   CreateOption(Oregon, $('.Oregon'));
+
+   CreateOption(Pennsylvania, $('.Pennsylvania'));
+   
+   // Create Option Africa
+   CreateOption(Puerto_Rico, $('.Puerto_Rico'));
+   
+   // Create Option Africa
+   CreateOption(Rhode_Island, $('.Rhode_Island'));
+   
+   // Create Option Africa
+   CreateOption(South_Carolina, $('.South_Carolina'));
+
+   CreateOption(South_Dakota, $('.South_Dakota'));
+   
+   // Create Option Africa
+   CreateOption(Tennessee, $('.Tennessee'));
+   
+   // Create Option Africa
+   CreateOption(Texas, $('.Texas'));
+   
+   // Create Option Africa
+   CreateOption(Utah, $('.Utah'));
+
+   // Create Option Africa
+   CreateOption(Virginia, $('.Virginia'));
+
+   CreateOption(Virgin_Islands, $('.Virgin_Islands'));
+   
+   // Create Option Africa
+   CreateOption(Vermont, $('.Vermont'));
+   
+   // Create Option Africa
+   CreateOption(Washington, $('.Washington'));
+   
+   // Create Option Africa
+   CreateOption(Wisconsin, $('.Wisconsin'));
+
+   CreateOption(West_Virginia, $('.West_Virginia'));
+   
+   // Create Option Africa
+   CreateOption(Wyoming, $('.Wyoming'));
+   
+   
+   // Hide All Select
+   $('.option select').hide();
+   
+   // Show First Selected
+   $('.Alaska').show().css('display', 'inline-block');
+   
+   
+   
+   // Show List Option City Whene user Chosse Countries
+   
+   CountSelect.on('change', function () {
+       
+       // get Id option 
+       var myId = $(this).find(':selected').attr('id');
+       console.log($(this).val());
+       // Show Select Has class = Id And Hide Siblings
+       $('.option select').filter('.' + myId).fadeIn(400).siblings('select').hide();
+       
+   });
+   
+});
+  </script>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="index.html">Global Economical Quotes</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item active">
+            <a class="nav-link font-weight-bolder" href="./health.html" style="color: rgb(0, 73, 176);">Health insurance</a>
+        </li>
+        <li class="nav-item active">
+            <a class="nav-link font-weight-bolder" href="./final expence.html" style="color: rgb(0, 73, 176);">Final expense</a>
+        </li>
+
+        <li class="nav-item active">
+            <a class="nav-link font-weight-bolder" href="./auto insurance.html" style="color:rgb(0, 73, 176);">Auto insurance</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link font-weight-bolder" href="./credit reapir.html" style="color: rgb(0, 73, 176);">Credit repair</a>
+        </li>
+        </ul>
+        <a href="tel:+917003865492"><button type="button" class="btn btn-light border-dark"><i class="fa-solid fa-mobile-screen"></i> Call Us Now</button></a>
+    </div>
+</nav>
+<div class="form-bg">
+  
+    <p style="color: rgb(255, 255, 255);" class="font-weight-bolder"><img src="./image/\png-transparent-material-circle-body-piercing-jewellery-font-gradient-green-ring-love-frame-ring-thumbnail-removebg-preview.png" alt="" height="30px">CONNECT WITH US</p>
+    <h1 style="font-size: 5rem; color: rgb(255, 255, 255);">Health Insurance</h1>
+    <h5 style="color: rgb(255, 255, 255);">Fill in this quick form and we will get back to you</h5>
+    
+</div>
+  <div class="container mt-4">
+  <h1>Explore Your Medicare Options Immediately:</h1>
+  </div>
+  <div class="container-fluid mt-5 bg-info">
+   <form method="POST" autocomplete="off" name="google-sheet" onsubmit="other()">
+    
+      <input id="leadid_token" name="universal_leadid" type="hidden" value="" />
+      
+      <!-- <input type="checkbox" id="leadid_tcpa_disclosure" hidden/>
+      <input type="hidden" id="leadid_tcpa_disclosure" hidden/>
+      <input type="radio" id="leadid_tcpa_disclosure" hidden checked/> -->
+    <!-- <select id="leadid_tcpa_disclosure" hidden>
+    <option value="Any_Value_You_Want">Yes</option>
+    <option value="Any_Value_You_Want">No</option> -->
+    <div class="row">
+    <div class="col-md-6">
+      <div><label for="fname">First Name</label></div>
+      <div><input type="text" name="fname" placeholder="first name" required></div>
+    </div>
+    <div class="col-md-6">
+      <div><label for="fname">Last Name</label></div>
+      <div><input type="text" name="lname" placeholder="Last name" required></div>
+    </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div><label for="address">Address</label></div>
+        <div><input type="text" name="address" placeholder="Address" required></div>
+    </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div><label for="state">State</label></div>
+        <div>
+			<select class="countries" id="country" name="state" required>          
+			</select>
+			
+      </div>
+      </div>
+      <div class="col-md-6">
+		<div><label for="city">City</label></div>
+		<div class="option">
+		<select class="Alaska" name="city">
+	  
+		</select>
+		<select class="Alabama" name="city">
+	  
+		</select>
+		<select class="Arkansas" name="city">
+	  
+		</select>
+		<select class="Arizona" name="city">
+	  
+		</select>
+		<select class="California" name="city">
+	  
+		</select>
+		<select class="Colorado" name="city">
+	  
+		</select>
+		<select class="Connecticut" name="city">
+	  
+		</select>
+		<select class="Columbia" name="city">
+	  
+		</select>
+		<select class="Delaware" name="city">
+	  
+		</select>
+		<select class="Florida" name="city">
+	  
+		</select>
+		<select class="Georgia" name="city">
+	  
+		</select>
+		<select class="Guam" name="city">
+	  
+		</select>
+		<select class="Hawaii" name="city">
+	  
+		</select>
+		<select class="Iowa" name="city">
+	  
+		</select>
+		<select class="Idaho" name="city">
+	  
+		</select>
+		<select class="Illinois" name="city">
+	  
+		</select>
+		<select class="Indiana" name="city">
+	  
+		</select>
+		<select class="Kansas" name="city">
+	  
+		</select>
+		<select class="Kentucky" name="city">
+	  
+		</select>
+		<select class="Louisiana" name="city">
+	  
+		</select>
+		<select class="Massachusetts" name="city">
+	  
+		</select>
+		<select class="Maryland" name="city">
+	  
+		</select>
+		<select class="Maine" name="city">
+	  
+		</select>
+		<select class="Michigan" name="city">
+	  
+		</select>
+		<select class="Minnesota" name="city">
+	  
+		</select>
+		<select class="Missouri" name="city">
+	  
+		</select>
+		<select class="Mississippi" name="city">
+	  
+		</select>
+		<select class="Montana" name="city">
+	  
+		</select>
+		<select class="North_Carolina" name="city">
+	  
+		</select>
+		<select class="North_Dakota" name="city">
+	  
+		</select>
+		<select class="Nebraska" name="city">
+	  
+		</select>
+		<select class="New_Hampshire" name="city">
+	  
+		</select>
+		<select class="New_Jersey" name="city">
+	  
+		</select>
+		<select class="New_Mexico" name="city">
+	  
+		</select>
+		<select class="Nevada" name="city">
+	  
+		</select>
+		<select class="New_York" name="city">
+	  
+		</select>
+		<select class="Ohio" name="city">
+	  
+		</select>
+		<select class="Oklahoma" name="city">
+	  
+		</select>
+		<select class="Oregon" name="city">
+	  
+		</select>
+		<select class="Pennsylvania" name="city">
+	  
+		</select>
+		<select class="Puerto_Rico" name="city">
+	  
+		</select>
+		<select class="Rhode_Island" name="city">
+	  
+		</select>
+		<select class="South_Carolina" name="city">
+	  
+		</select>
+		<select class="South_Dakota" name="city">
+	  
+		</select>
+		<select class="Tennessee" name="city">
+	  
+		</select>
+		<select class="Texas" name="city">
+	  
+		</select>
+		<select class="Utah" name="city">
+	  
+		</select>
+		<select class="Virginia" name="city">
+	  
+		</select>
+		<select class="Virgin_Islands" name="city">
+	  
+		</select>
+		<select class="Vermont" name="city">
+	  
+		</select>
+		<select class="Washington" name="city">
+	  
+		</select>
+		<select class="Wisconsin" name="city">
+	  
+		</select>
+		<select class="West_Virginia" name="city">
+	  
+		</select>
+		<select class="Wyoming" name="city">
+	  
+		</select>
+	  </div>
+
+        
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6">
+		<div><label for="zip">Zip code</label></div>
+        <div><input type="text" name="zip" placeholder="Zip code" required></div>
+        
+      </div>
+      <div class="col-md-6">
+		<div><label for="income">Income</label></div>
+        <div>
+          <input type="text" name="income" id="income" placeholder="income" required>
+      </div>
+
+        
+      </div>
+    </div>
+     <div class="row">
+      <div class="col-md-6">
+		<div><label for="number">Mobile Number</label></div>
+        <div><input type="text" name="number" placeholder="Mobile Number" required></div>
+
+        
+      </div>
+      <div class="col-md-6">
+		<div><label for="email">Your Email</label></div>
+        <div>
+          <input type="email" name="email" id="email" placeholder="email" required>
+      </div>
+
+       
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+		<div><label for="gender">Gender</label></div>
+        <div>
+          <select name="gender" id="gender" required>
+         <option value="other">Other</option>
+         <option value="male">Male</option>
+         <option value="female">Female</option>
+        </select>
+      </div>
+
+       
+      </div>
+      <div class="col-md-6">
+		<div><label for="height">Height</label></div>
+        <div>
+          <input type="text" name="height" id="height" required>
+      </div>
+
+        
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+		<div><label for="dob">D.O.B</label></div>
+        <div>
+          <input type="date" name="dob" value="dob" id="dob" required>
+        </div>
+
+        
+      </div>
+      <div class="col-md-6">
+
+		<div><label for="condition">Health Condition</label></div>
+        <div>
+          <select name="Health condition" id="condition" required>
+            <option value="fine">Fine</option>
+            <option value="not fine">not fine</option>
+            <option value="no idea">no idea</option>
+           </select>
+        </div>
+        <div>
+          <select name="service" id="service" required hidden>
+            <option value="hinsurence">Health Insurance</option>
+           </select>
+           <input type="text" name="date" id="date" hidden>
+           <input type="text" name="time" id="time" hidden>
+           <input type="text" name="screen" id="screen" hidden>
+           <input type="text" name="browser" id="browser" hidden>
+        </div>
+      </div>
+    </div>
+    <div class="mt-5 justify-content-center">
+      <div class="row no-gutters">
+
+      <div class="col-md-1">
+      
+    <input type="checkbox" name="leadid_tcpa_disclosure" id="leadid_tcpa_disclosure"/>
+    </div>
+    <div class="col-md-11">
+
+      <label for="leadid_tcpa_disclosure" class="">By clicking the button and submitting this form, I agree that I am 18+ years old and I provide my signature expressly consenting to receive emails, calls, postal mail,  text messages and other forms of communication regarding Medicare Supplement, Medicare Advantage, Part D, or other offers from companies and agents to the number(s) I provided, including a mobile phone, even if I am on a state or federal Do Not Call and/or Do Not Email registry. The list of companies participating are subject to change. I will receive calls from a maximum of eight providers. Such calls and text messages may use automated telephone dialing systems, artificial or pre-recorded voices. I understand my wireless carrier may impose charges for calls or texts. I understand that my consent to receive communications is not a condition of purchase and I may revoke my consent at any time.</label>
+      </div>
+    </div>
+    </div>
+   <div class="container">
+    <input type="submit" name="submit" value="submit">
+   </div>
+  
+    
+</form></div>
+<script id="LeadiDscript" type="text/javascript">
+  (function() {
+  var s = document.createElement('script');
+  s.id = 'LeadiDscript_campaign';
+  s.type = 'text/javascript';
+  s.async = true;
+  s.src = '//create.lidstatic.com/campaign/d080ad86-5f6d-c7c3-f27a-57be61ebc016.js?snippet_version=2';
+  var LeadiDscript = document.getElementById('LeadiDscript');
+  LeadiDscript.parentNode.insertBefore(s, LeadiDscript);
+  })();
+  </script>
+  <noscript><img src='//create.leadid.com/noscript.gif?lac=D504499A-5F80-15CE-16A4-5C7C3C124BCF&lck=d080ad86-5f6d-c7c3-f27a-57be61ebc016&snippet_version=2' /></noscript>
+
+
+
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxwsvO94lnyza2rKu_lBiElFPVF6tqkd-g8Tr5esWF4qiv7uOoIKIoC_VDLAuRnMnWO/exec'
+    const form = document.forms['google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+        .catch(error => console.error('Error!', error.message))
+    })
+    
+    function other(){
+        const d=new Date();
+        
+        document.getElementById('screen').value= screen.width + "x" + screen.height;
+        document.getElementById('date').value=d.getDate()+"-"+d.getMonth()+"-"+d.getFullYear();
+        document.getElementById('time').value=d.getHours()+":"+d.getMinutes()+":"+d.getSeconds();
+        let userAgent = navigator.userAgent;
+         let browserName;
+         
+         if(userAgent.match(/chrome|chromium|crios/i)){
+             browserName = "chrome";
+           }else if(userAgent.match(/firefox|fxios/i)){
+             browserName = "firefox";
+           }  else if(userAgent.match(/safari/i)){
+             browserName = "safari";
+           }else if(userAgent.match(/opr\//i)){
+             browserName = "opera";
+           } else if(userAgent.match(/edg/i)){
+             browserName = "edge";
+           }else{
+             browserName="No browser detection";
+           }
+         
+          document.getElementById("browser").value= browserName ;
+         
+      }
+other();
+  </script>
+  <div class="footer mt-3" style="background-color:black ;">
+    <div class="container pt-3 pb-3">
+    <h5 class="text-light text-left">Address</h5>
+    <h4 class="text-light text-left">155 North Wacker Drive 42nd floor Chicargo, IL 60606</h4>
+
+    <h5 class="text-light text-left mt-3">My Phone</h5>
+    <h4 class="text-light text-left">(+18668883960)</h4>
+
+    <h5 class="text-light text-left mt-3">Contact Me Via</h5>
+    <h4 class="text-light text-left">Support@globaleconomicalquotes.com</h4>
+    
+    <h5 class="text-light text-left mt-3">Timing</h5>
+    <h4 class="text-light text-left">Monday To Friday 9:00 AM-7:00 PM</h4>
+</div>
+</div>
+
+<h5>© 2022 All Rights Reserved By Global Economical Quotes Designed</h5>
+</body>
+</html>
